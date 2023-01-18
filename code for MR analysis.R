@@ -96,7 +96,7 @@ F.exposure<-(r2.exposure/(1-r2.exposure))*((N-k-1)/k)
 out$F.exposure<-F.exposure
 
 ####MR analysis
-res<-mr(mydata_presso, method_list=c("mr_egger_regression","mr_ivw","mr_ivw_mre","mr_ivw_fe","mr_wald_ratio","mr_weighted_median","mr_two_sample_ml","mr_simple_mode","mr_weighted_mode"))#常见8种方法
+res<-mr(mydata_presso, method_list=c("mr_egger_regression","mr_ivw","mr_ivw_mre","mr_ivw_fe","mr_wald_ratio","mr_weighted_median","mr_two_sample_ml","mr_simple_mode","mr_weighted_mode"))
 res_or<-generate_odds_ratios(res)
 
 ####Sensitivity analysis
